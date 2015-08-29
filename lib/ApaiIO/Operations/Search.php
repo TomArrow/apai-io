@@ -68,7 +68,7 @@ class Search extends AbstractOperation
      *
      * @return \ApaiIO\Operations\Search
      */
-    public function setKeywords($responseGroup)
+    public function setResponseGroup($responseGroup)
     {
         $this->parameter['ResponseGroup'] = $responseGroup;
 
