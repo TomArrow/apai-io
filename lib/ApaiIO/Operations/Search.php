@@ -60,6 +60,20 @@ class Search extends AbstractOperation
 
         return $this;
     }
+    
+    /**
+     * Sets the response group
+     *
+     * @param string $responseGroup
+     *
+     * @return \ApaiIO\Operations\Search
+     */
+    public function setKeywords($responseGroup)
+    {
+        $this->parameter['ResponseGroup'] = $responseGroup;
+
+        return $this;
+    }
 
     /**
      * Sets the resultpage to a specified value
