@@ -61,6 +61,23 @@ class Search extends AbstractOperation
         return $this;
     }
     
+    
+    /**
+     * Sets the brand
+     *
+     * @param string $brand
+     *
+     * @return \ApaiIO\Operations\Search
+     */
+    public function setKeywords($brand)
+    {
+        $this->parameter['Brand'] = $brand;
+
+        return $this;
+    }
+    
+    
+    
     /**
      * Sets the response group
      *
